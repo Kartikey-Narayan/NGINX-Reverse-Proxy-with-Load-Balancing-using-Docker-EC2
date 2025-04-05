@@ -1,0 +1,26 @@
+{
+  "name": "node-app",
+  "version": "1.0.0",
+  "description": "A simple Node.js backend app used for NGINX reverse proxy and load balancing demo with Docker and Cloudflare.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "nginx",
+    "docker",
+    "reverse-proxy",
+    "load-balancer",
+    "cloudflare",
+    "backend",
+    "devops"
+  ],
+  "author": "Kartikey Narayan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

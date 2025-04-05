@@ -1,0 +1,23 @@
+# 🐍 Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 📁 Ignore OS (MAC OS) and editor-specific files
+.DS_Store
+
+.idea/
+.vscode/
+
+*.swp
+
+# 📝 Ignore logs and environment files
+*.log
+
+.env
+.env.local
+
+# 🐳 Ignore Docker-related files that shouldn’t be copied
+Dockerfile
+.dockerignore
