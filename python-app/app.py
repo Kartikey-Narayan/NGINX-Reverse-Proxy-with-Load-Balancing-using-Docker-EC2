@@ -17,7 +17,7 @@ def home():
 def health():
     return jsonify({
         "status": "✅ OK",
-        "message": "💚 Healthy and running smoothly!"
+        "message": "💚 Healthy and running smoothly! - From Python Flask App"
     }), 200
 
 # Catch all undefined routes with a 404 response
@@ -25,7 +25,7 @@ def health():
 def page_not_found(e):
     return jsonify({
         "error": "❌ Not Found",
-        "message": "⚠️ The requested route does not exist."
+        "message": "⚠️ The requested route does not exist - From Python Flask App."
     }), 404
 
 # Start the Flask app

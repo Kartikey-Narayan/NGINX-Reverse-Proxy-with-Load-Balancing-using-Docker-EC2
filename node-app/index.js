@@ -9,14 +9,17 @@ const PORT = 3000;
 
 // Home
 app.get("/", (req, res) => {
-  res.send("🚀 Hello from Node.js App!");
+  res.status(200).json({
+    status: "✅ OK",
+    message: "🚀 Hello from Node.js App!"
+  });
 });
 
 // Health
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "✅ OK",
-    message: "💚 Healthy and running smoothly!"
+    message: "💚 Healthy and running smoothly! - From Node.js App"
   });
 });
 
@@ -24,7 +27,7 @@ app.get("/health", (req, res) => {
 app.use((req, res) => {
   res.status(404).json({
     error: "❌ Not Found",
-    message: `⚠️ The route '${req.originalUrl}' does not exist.`
+    message: `⚠️ The route '${req.originalUrl}' does not exist - From Node.js App.`
   });
 });
 
